@@ -1,8 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
+import useComlink from 'react-use-comlink'
+import { WorkerClass } from './worker'
 import './App.css';
 
 function App() {
+  const [state, setState] = React.useState(0)
+
+  const { proxy } = useComlink<typeof WorkerClass>(
+    () => new Worker('./worker.ts'),
+    []
+  )
+
+  React.useEffect(() => {
+    (async () => {
+      const classInstance = await new proxy(0)
+      await classInstance.increment(1)
+      setState(await classInstance.counter)
+    })()
+  }, [proxy])
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +34,7 @@ function App() {
         >
           Learn React
         </a>
+        <div>{state}</div>
       </header>
     </div>
   );

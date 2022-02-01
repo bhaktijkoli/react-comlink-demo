@@ -2882,6 +2882,11 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
+comlink@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/comlink/-/comlink-4.3.1.tgz#0c6b9d69bcd293715c907c33fe8fc45aecad13c5"
+  integrity sha512-+YbhUdNrpBZggBAHWcgQMLPLH1KDF3wJpeqrCKieWQ8RL7atmgsgTQko1XEBK6PsecfopWNntopJ+ByYG1lRaA==
+
 commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -7034,6 +7039,11 @@ react-scripts@5.0.0:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-use-comlink@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-use-comlink/-/react-use-comlink-2.0.1.tgz#8e5f835bebb3b8606a8b7202f7e0840f5b406391"
+  integrity sha512-YDN2wJN2UY7IJB3rDTF9e1Z7Ffo8BtDCeHzcB3vTBfTZ0R/cdi6PgOpPZ4G2Fg2xDdxJL4hwovFboXtdsfQH1Q==
 
 react@^17.0.2:
   version "17.0.2"
